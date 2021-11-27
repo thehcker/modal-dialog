@@ -1,11 +1,5 @@
 class DialogComponent {
   alertMessage(id) {
-    // let btn = document.getElementById(id);
-    // btn.addEventListener("click", () => {
-    //   console.log("Hello");
-    //   alert("Are you sure you want to continue?");
-    // });
-
     var modal = document.getElementById("myModal");
     // Get the button that opens the modal
     var btn = document.getElementById("button");
