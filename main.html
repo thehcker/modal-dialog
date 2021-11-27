@@ -24,11 +24,16 @@
 
       /* Modal Content */
       .modal-content {
+        position: relative;
         background-color: #fefefe;
         margin: auto;
         padding: 20px;
         border: 1px solid #888;
         width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        animation-name: animatetop;
+        animation-duration: 0.4s;
       }
 
       /* The Close Button */
@@ -45,12 +50,25 @@
         text-decoration: none;
         cursor: pointer;
       }
+      #message {
+        margin: 20px;
+        padding: 30px;
+      }
+      /* Add Animation */
+      @keyframes animatetop {
+        from {
+          top: -300px;
+          opacity: 0;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
     </style>
   </head>
   <body>
-    <form method="POST" action="#">
-      <button type="button" id="button">Click Me</button>
-    </form>
+    <button type="button" id="button">Click Me</button>
     <div id="myModal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
@@ -60,6 +78,7 @@
         <button type="button" id="cancel">Cancel</button>
       </div>
     </div>
+    <div id="message"></div>
 
     <script type="text/javascript" src="dialogComponent.js"></script>
   </body>
