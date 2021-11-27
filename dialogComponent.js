@@ -1,16 +1,16 @@
 class DialogComponent {
   alertMessage(id) {
-    var modal = document.getElementById("myModal");
+    let modal = document.getElementById("myModal");
     // Get the button that opens the modal
-    var btn = document.getElementById("button");
+    let btn = document.getElementById("button");
 
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    let span = document.getElementsByClassName("close")[0];
 
-    // Get the id that for yes button
+    // Get the id for yes button
     let yesBtn = document.getElementById("yes");
 
-    // Get the id that for yes button
+    // Get the id for cancel button
     let cancelBtn = document.getElementById("cancel");
 
     // Get the id for message div
